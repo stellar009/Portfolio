@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Dheeraj Vishwakarma" }],
   icons: {
-    icon: "/logo.svg",
+    icon: "https://avatars.githubusercontent.com/u/235134719?v=4",
   },
   openGraph: {
     title: "DHEERAJ VISHWAKARMA // Unity Game Developer",
