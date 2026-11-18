@@ -28,10 +28,10 @@ export function BootScreen() {
     }
     BOOT_LINES.forEach((_, i) => {
       timers.push(
-        setTimeout(() => setLines(i + 1), 150 * (i + 1))
+        setTimeout(() => setLines(i + 1), 250 * (i + 1))
       );
     });
-    timers.push(setTimeout(() => setVisible(false), 150 * BOOT_LINES.length + 900));
+    timers.push(setTimeout(() => setVisible(false), 250 * BOOT_LINES.length + 900));
     return () => timers.forEach(clearTimeout);
   }, []);
 
@@ -79,7 +79,7 @@ export function BootScreen() {
                   initial={{ width: "0%" }}
                   animate={{ width: "100%" }}
                   transition={{
-                    duration: 0.15 * BOOT_LINES.length + 0.6,
+                    duration: 0.25 * BOOT_LINES.length + 0.6,
                     ease: "easeInOut",
                   }}
                 />
